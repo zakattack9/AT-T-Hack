@@ -1,19 +1,21 @@
 (function(){function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);var f=new Error("Cannot find module '"+o+"'");throw f.code="MODULE_NOT_FOUND",f}var l=n[o]={exports:{}};t[o][0].call(l.exports,function(e){var n=t[o][1][e];return s(n?n:e)},l,l.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s}return e})()({1:[function(require,module,exports){
-(function (__dirname){
-const path = require('path')
-const getColors = require('get-image-colors')
- 
+const path = require('path');
+const getColors = require('get-image-colors');
+
 var colorCodes = [];
-getColors(path.join(__dirname, 'images/img4.jpg')).then(colors => {
-  colors.map(currVal => {
-  	colorCodes.push(currVal._rgb);
-  })
-  grabCol(colorCodes);
+$('#btn').on('click', function(){
+	let link = 'https://cdn.clarivate.com/wp-content/uploads/2017/05/antifraud-darkweb-and-cyber-intelligence-560x320.jpg';
+
+	getColors(link).then(colors => {
+	  colors.map(currVal => {
+	  	colorCodes.push(currVal._rgb);
+	  })
+	  grabCol(colorCodes);
+	})
 })
 
 //console.log($('#container'))
 
-}).call(this,"/")
 },{"get-image-colors":48,"path":113}],2:[function(require,module,exports){
 module.exports = {
 	trueFunc: function trueFunc(){
