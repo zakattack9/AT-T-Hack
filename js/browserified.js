@@ -4,7 +4,8 @@ const getColors = require('get-image-colors');
 
 var colorCodes = [];
 $('#btn').on('click', function(){
-	let link = 'https://cdn.clarivate.com/wp-content/uploads/2017/05/antifraud-darkweb-and-cyber-intelligence-560x320.jpg';
+	console.log($('#displayImg').attr('src'));
+	let link = $('#displayImg').attr('src');
 
 	getColors(link).then(colors => {
 	  colors.map(currVal => {
@@ -15,7 +16,6 @@ $('#btn').on('click', function(){
 })
 
 //console.log($('#container'))
-
 },{"get-image-colors":48,"path":113}],2:[function(require,module,exports){
 module.exports = {
 	trueFunc: function trueFunc(){

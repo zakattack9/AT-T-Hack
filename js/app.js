@@ -1,5 +1,9 @@
 
 //grabs colors from image conversion
+$(window).scroll(() => {
+	$('#titleWrap').css('opacity', Math.max(1 - $(window).scrollTop() / 275, 0));
+});
+
 function grabCol(colors) {
 	colors.map(currVal => {
 		console.log(currVal)
@@ -7,8 +11,11 @@ function grabCol(colors) {
 	})
 }
 
-var context = new AudioContext()
-var o = context.createOscillator()
-o.type = "sine"
-o.connect(context.destination)
-o.end()
+function convertor() {
+	console.log($('#displayImg').attr('src'))
+}
+
+var loadFile = function(event) {
+  var output = document.getElementById('displayImg');
+  output.src = URL.createObjectURL(event.target.files[0]);
+};
