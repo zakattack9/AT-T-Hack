@@ -16,9 +16,13 @@ html, body {
 	line-height: 75px;
 }
 
+#displayImg {
+	width: 50px;
+}
+
 #container {
 	height: 100%;
-	overflow-y: hidden;
+
 }
 
 .color {
