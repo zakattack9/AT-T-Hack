@@ -74,6 +74,17 @@ function grabCol(colors) {
 	console.log(list[newRound(rgbValues)]);
 }
 
+//makes dynamic element the same height and width
+
+let $img = $('#playImg');
+$(window).resize(function () {
+	$img.height($img.width());
+}).resize();
+
+function convertor() {
+	console.log($('#displayImg').attr('src'))
+}
+
 var loadFile = function(event) {
   var output = document.getElementById('displayImg');
   output.src = URL.createObjectURL(event.target.files[0]);
