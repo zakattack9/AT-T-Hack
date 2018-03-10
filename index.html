@@ -7,14 +7,20 @@
 	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
 </head>
 <body>
-	<div id="topBar">
-		chromaVibez
-		<button onclick="convertor()" id="btn">clicky</button>
-		<input type="file" accept="image/*" onchange="loadFile(event)">
-    <img id="displayImg">
+	<div id="nav">
+		<span id="navTxt">DEVELOPERS</span>
+	</div>
+
+	<div id="title">
+		<div id="titleWrap">
+			chromaVibez
+		</div>
 	</div>
 
 	<div id="container">
+		<div id="uploadBtn" onclick="convertor()" id="btn">Get Vibing!</div>
+		<input id="uploadInp" type="file" accept="image/*" onchange="loadFile(event)">
+    <img id="displayImg">
 	</div>
 
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
