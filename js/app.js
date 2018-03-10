@@ -11,6 +11,13 @@ function grabCol(colors) {
 	})
 }
 
+//makes dynamic element the same height and width
+
+let $img = $('#playImg');
+$(window).resize(function () {
+	$img.height($img.width());
+}).resize();
+
 function convertor() {
 	console.log($('#displayImg').attr('src'))
 }
