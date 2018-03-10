@@ -81,6 +81,9 @@ $(window).resize(function () {
 	$img.height($img.width());
 }).resize();
 
+
+//converts img
+
 function convertor() {
 	console.log($('#displayImg').attr('src'))
 }
@@ -94,4 +97,3 @@ $('#uploadInp').on('click', function(){
 	$('#uploadInp')[0].style.width = "300px";
 	$('#uploadInp')[0].style.height = "200px";
 })
-
