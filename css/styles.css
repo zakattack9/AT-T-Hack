@@ -70,7 +70,7 @@ html, body {
 	font-size: 30px;
 	height: 50px;
 	width: 300px;
-	background-color: white;
+	background-color: gray;
 	outline: none;
 	text-align: center;
 	margin-left: auto;
@@ -80,21 +80,35 @@ html, body {
 }
 
 #uploadInp {
+	height: 100px;
+	width: 200px;
 	display: block;
-	height: 200px;
-	width: 300px;
 	background-color: lightgray;
-	outline: none;
 	border-radius: 20px;
-	margin-right: auto;
 	margin-left: auto;
+	margin-right: auto;
 	position: relative;
-	top: 25%;
+	top: 10%;
+}
+
+input[type="file"] {
+  display: none;
+}
+
+#uploadTtl {
+	width: 100%;
 	text-align: center;
+	position: relative;
+	top: 20px;
 }
 
 #displayImg {
-	width: 50px;
+	width: 175px;
+	display: block;
+	margin-right: auto;
+	margin-left: auto;
+	position: relative;
+	top: 20%;
 }
 
 .color {
