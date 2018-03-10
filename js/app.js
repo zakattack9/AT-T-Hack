@@ -6,6 +6,7 @@ function grabCol(colors) {
 		$('#container').append(`<div class="color" style="background-color:rgb(${currVal[0]}, ${currVal[1]}, ${currVal[2]})"></div>`);
 	})
 }
+<<<<<<< HEAD
 /*var context = new AudioContext()
 var o = context.createOscillator()
 o.type = "sine"
@@ -52,3 +53,32 @@ function round(data){
 }
 console.log(round(test));
 //diff.push((Math.abs(rgb[2][0]-avg[0])+Math.abs(rbg[2][1]-avg[1])+Math.abs(rgb[2][2]-avg[2]))/3)
+=======
+
+function convertor() {
+	console.log($('#displayImg').attr('src'))
+}
+
+// let fileInput = document.getElementById("fileIntake");
+
+// fileInput.accept = "image/*";
+// fileInput.require = true;
+
+// fileInput.addEventListener("change", () => {
+//   let reader = new FileReader();
+//   let displayImg = document.getElementById("displayImg");
+
+//   reader.addEventListener("load", () => {
+//       displayImg.src = reader.result;
+//       console.log(displayImg.src)
+//   }, false)
+
+//   reader.readAsDataURL(fileInput.files[0])
+// })
+
+
+var loadFile = function(event) {
+  var output = document.getElementById('displayImg');
+  output.src = URL.createObjectURL(event.target.files[0]);
+};
+>>>>>>> 5989ad57625d93746d457d6d75515af3035cd98e

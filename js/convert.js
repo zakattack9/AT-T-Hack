@@ -3,7 +3,8 @@ const getColors = require('get-image-colors');
 
 var colorCodes = [];
 $('#btn').on('click', function(){
-	let link = 'https://cdn.clarivate.com/wp-content/uploads/2017/05/antifraud-darkweb-and-cyber-intelligence-560x320.jpg';
+	console.log($('#displayImg').attr('src'));
+	let link = $('#displayImg').attr('src');
 
 	getColors(link).then(colors => {
 	  colors.map(currVal => {
