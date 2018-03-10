@@ -58,7 +58,7 @@ hr {
 
 /*   Column 3   */
 
-#col3 {
+/*#col3 {
 	height: 100%;
 	width: 20%;
 	display: flex;
@@ -70,11 +70,15 @@ hr {
 	background-color: #4dccbd;
 	height: 33%;
 	width: 100%;
+}*/
+
+#col3 {
+	background-color: #4dccbd;
 }
 
-#playlist {
+/*#playlist {
 	width: 100%;
-	display: flex;
+	display: none;
 
 }
 
@@ -82,4 +86,30 @@ hr {
 	width: 100%;
 	background-color: black;
 	display: flex;
+}*/
+
+#container2 {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin: auto;
+	display: flex;
 }
+
+#playlist, #playImg {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+}
+
+#playImg {
+	z-index: 10;
+	background-color: black;
+	margin: auto;
+}
+
+container
+	navi
+	infoi (goes over navi)
+		img
