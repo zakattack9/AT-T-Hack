@@ -9,10 +9,6 @@ function grabCol(colors) {
 
 
 //makes dynamic element the same height and width
-// var $elem = ​$('div');
-// $(window).resize(function () {
-//     $elem.height($elem.width());
-// }).resize();
 
 let $img = $('#playImg');
 $(window).resize(function () {
