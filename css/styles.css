@@ -228,3 +228,26 @@ html, body {
 	width: 20%;
 	display: inline-block;
 }
+
+
+/*   Overlay   */
+#container2 {
+	width: 400px;
+	height: 400px;
+	position: relative;
+	margin: auto;
+	display: flex;
+}
+
+#playlist, #playImg {
+	width: 100%;
+	height: 100%;
+	position: relative;
+	margin: auto;
+}
+
+#playImg {
+	z-index: 10;
+	background-color: black;
+	margin: auto;
+}

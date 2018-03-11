@@ -66,12 +66,12 @@ function grabCol(colors) {
 	colors.map(currVal => {
 		var singleRGB = [];
 		singleRGB.push(currVal[0], currVal[1], currVal[2]);
-    $('#container').append(`<div class="color" style="background: linear-gradient(to bottom, rgb(255,255,255) 0%, rgb(${currVal[0]}, ${currVal[1]}, ${currVal[2]}) 70%)"></div>`);
+		rgbValues.push(singleRGB);
+		$('#container').append(`<div class="color" style="background-color:rgb(${currVal[0]}, ${currVal[1]}, ${currVal[2]})"></div>`);
 		console.log(singleRGB)
 		console.log(rgbValues)
 	})
 	console.log(list[newRound(rgbValues)]);
-
 }
 
 //makes dynamic element the same height and width
