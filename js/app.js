@@ -67,10 +67,9 @@ function grabCol(colors) {
 		var singleRGB = [];
 		singleRGB.push(currVal[0], currVal[1], currVal[2]);
     $('#container').append(`<div class="color" style="background: linear-gradient(to bottom, #78C5C9 0%, rgb(${currVal[0]}, ${currVal[1]}, ${currVal[2]})60%,rgb(255,255,255) 100%)"></div>`);
-		console.log(singleRGB)
-		console.log(rgbValues)
 	})
-	console.log(list[newRound(rgbValues)]);
+  $('.color').css('display', 'inline-block');
+  $('.color').css('height', '100%');
 
 }
 
@@ -93,12 +92,8 @@ var loadFile = function(event) {
   output.src = URL.createObjectURL(event.target.files[0]);
 };
 
-$('#uploadInp').on('click', function(){
-	$('#uploadInp')[0].style.width = "300px";
-	$('#uploadInp')[0].style.height = "200px";
-})
-
 $('#title').click(function (event) {
+  $('#container').css('display', 'block');
   $('#title').css('min-height', '0px');
   $('#title').css('height', '0px');
 });
