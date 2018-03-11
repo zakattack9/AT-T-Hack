@@ -80,7 +80,7 @@ html, body {
 }
 
 #uploadInp {
-	height: 100px;
+	height: 300px;
 	width: 200px;
 	display: block;
 	background-color: lightgray;
@@ -91,7 +91,7 @@ html, body {
 	top: 10%;
 }
 
-#uploadInp: hover {
+#uploadInp:hover, #uploadBtn:hover {
 	cursor: pointer;
 }
 
@@ -107,7 +107,7 @@ input[type="file"] {
 }
 
 #displayImg {
-	width: 175px;
+	width: 150px;
 	display: block;
 	margin-right: auto;
 	margin-left: auto;
@@ -220,7 +220,7 @@ html, body {
 }
 
 #displayImg {
-	width: 50px;
+	width: 200px;
 }
 
 .color {
