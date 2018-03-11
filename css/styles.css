@@ -91,6 +91,10 @@ html, body {
 	top: 10%;
 }
 
+#uploadInp: hover {
+	cursor: pointer;
+}
+
 input[type="file"] {
   display: none;
 }
@@ -188,7 +192,7 @@ html, body {
 #uploadBtn {
 	font-size: 30px;
 	height: 50px;
-	width: 300px;
+	width: 298px;
 	background-color: white;
 	outline: none;
 	text-align: center;
@@ -196,6 +200,9 @@ html, body {
 	margin-right: auto;
 	position: relative;
 	top: 20%;
+	border: solid 1px lightgray;
+	border-bottom-right-radius: 20px;
+	border-bottom-left-radius: 20px;
 }
 
 #uploadInp {
